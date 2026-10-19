@@ -1,0 +1,189 @@
+:root {
+    --krz-green:#0B3B27;
+    --krz-green2:#144F34;
+    --krz-cream:#FBF7EC;
+    --krz-yellow:#F2B632;
+    --krz-gold:#8A5A00;
+    --krz-ink:#1d2a22;
+    --krz-muted:#5a5a4a
+}
+
+body {
+    background:var(--krz-cream);
+    color:var(--krz-ink);
+    font-family:'Baloo 2',system-ui,sans-serif
+}
+
+a {
+    text-decoration:none
+}
+
+.font-script {
+    font-family:'Pacifico',cursive
+}
+
+.krz-yellow {
+    color:var(--krz-yellow)
+}
+
+.krz-green {
+    color:var(--krz-green)
+}
+
+.krz-muted {
+    color:var(--krz-muted)
+}
+
+.krz-eyebrow {
+    font-size:.85rem;
+    letter-spacing:2px;
+    color:var(--krz-green);
+    font-weight:700
+}
+
+.krz-heading {
+    color:var(--krz-green);
+    font-weight:700;
+    line-height:1.15
+}
+
+.krz-price {
+    color:var(--krz-gold);
+    font-weight:700;
+    font-size:1.1rem
+}
+
+.krz-nav {
+    background:var(--krz-cream);
+    padding:14px 0;
+    position:sticky;
+    top:0;
+    z-index:1030
+}
+
+.krz-nav .nav-link {
+    color:var(--krz-ink);
+    font-size:1.05rem;
+    padding:.3rem 0;
+    border-bottom:3px solid transparent
+}
+
+.krz-nav .nav-link:hover {
+    color:var(--krz-green)
+}
+
+.krz-nav .nav-link.active {
+    color:var(--krz-green);
+    font-weight:700;
+    border-bottom-color:var(--krz-yellow)
+}
+
+.btn-krz 
+{
+    background:var(--krz-green);
+    color:#fff;
+    border-radius:30px;
+    padding:.35rem 1.1rem
+}
+
+.btn-krz:hover {
+    background:var(--krz-green2);
+    color:#fff
+}
+
+.btn-yellow {
+    background:var(--krz-yellow);
+    color:#3a2800;
+    font-weight:700;
+    border-radius:30px;
+    padding:.65rem 1.8rem
+}
+
+.btn-yellow:hover {
+    background:#e0a420;
+    color:#3a2800
+}
+
+.btn-outline-krz {
+    border:2px solid var(--krz-green);
+    color:var(--krz-green);
+    font-weight:700;
+    border-radius:30px;
+    padding:.55rem 1.6rem
+}
+
+.btn-outline-krz:hover {
+    background:var(--krz-green);
+    color:#fff}
+
+.krz-hero {
+    background:var(--krz-green);
+    border-radius:32px;
+    color:#fff;
+    overflow:hidden
+}
+
+.krz-hero .eyebrow {
+    letter-spacing:3px;
+    color:#F6E7B8;
+    font-size:.9rem}
+.krz-hero h1 {
+    font-family:'Pacifico',cursive;
+    font-size:clamp(3.5rem,8vw,5.75rem);
+    line-height:1.1
+}
+
+.krz-hero-text {
+    color:#DCE8DF;
+    font-size:1.1rem;
+    max-width:420px
+}
+
+.krz-hero-img {
+    max-height:380px
+}
+
+.krz-icon {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--krz-green);
+    color:var(--krz-yellow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.6rem
+}
+
+/* kartu produk */
+.krz-card{border:0;border-radius:20px;box-shadow:0 6px 18px rgba(11,59,39,.10)}
+.krz-card .card-img-top{border-radius:20px 20px 0 0;aspect-ratio:4/3;object-fit:cover}
+.krz-card .card-body{padding:1rem}
+.krz-card-title{font-size:1.1rem;font-weight:700;color:var(--krz-green);line-height:1.2;min-height:2.4em;margin-bottom:.25rem}
+
+/* chip filter + search */
+.krz-chip{border:1.5px solid #b9b9a8;color:var(--krz-ink);padding:.2rem 1.2rem;border-radius:24px}
+.krz-chip:hover{border-color:var(--krz-green)}
+.krz-chip.active{background:var(--krz-green);border-color:var(--krz-green);color:#fff}
+.krz-search{width:100%;max-width:300px}
+.krz-search .form-control{border:1.5px solid var(--krz-green);border-radius:30px;padding:.5rem 1.2rem;background:#fff}
+
+/* pagination */
+.krz-pagination{gap:8px}
+.krz-pagination .page-link{width:40px;height:40px;border-radius:50%!important;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--krz-green);color:var(--krz-green);font-weight:700;background:transparent}
+.krz-pagination .page-item.active .page-link{background:var(--krz-green);color:#fff}
+.krz-pagination .page-item.disabled .page-link{border-color:#b9b9a8;color:#9a9a8a}
+
+/* detail + about */
+.krz-check{list-style:none;padding-left:0}
+.krz-check li::before{content:"\2713";color:var(--krz-green);font-weight:700;margin-right:.6rem}
+.krz-polaroid{background:#fff;padding:14px;border-radius:12px;box-shadow:0 10px 26px rgba(11,59,39,.18);transform:rotate(2deg)}
+
+/* footer */
+.krz-footer{background:var(--krz-green);color:#DCE8DF;border-top:4px solid var(--krz-yellow)}
+.krz-footer a{display:block;color:#DCE8DF;line-height:2}
+.krz-footer a:hover{color:var(--krz-yellow)}
+.krz-footer-title{font-size:1.1rem;font-weight:700;color:var(--krz-yellow);margin-bottom:.6rem}
+.krz-footer-logo{filter:brightness(0) invert(1)} /* hapus baris ini kalau logo footer mau pakai warna asli */
+.krz-social{width:40px;height:40px;border:1.5px solid var(--krz-yellow);border-radius:50%;color:var(--krz-yellow)!important;display:flex!important;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;line-height:1!important}
+.krz-footer-bottom{border-top:1px solid rgba(220,232,223,.25)}
